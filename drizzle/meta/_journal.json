@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1711835833279,
+      "tag": "0000_fast_ted_forrester",
+      "breakpoints": true
+    }
+  ]
+}
