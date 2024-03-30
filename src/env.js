@@ -14,11 +14,6 @@ export const env = createEnv({
         (str) => !str.includes("YOUR_MYSQL_URL_HERE"),
         "You forgot to change the default URL",
       ),
-    HOST: z.string(),
-    PORT: z.string(),
-    USERNAME: z.string(),
-    PASSWORD: z.string(),
-    DATABASE: z.string(),
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
@@ -39,11 +34,6 @@ export const env = createEnv({
    */
   runtimeEnv: {
     DATABASE_URL: process.env.DATABASE_URL,
-    HOST: process.env.HOST,
-    PORT: process.env.PORT,
-    USERNAME: process.env.USERNAME,
-    PASSWORD: process.env.PASSWORD,
-    DATABASE: process.env.DATABASE,
     NODE_ENV: process.env.NODE_ENV,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
